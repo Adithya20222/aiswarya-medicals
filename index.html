@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aiswarya Medicals - Pharmacy and medical store in Athani, Kerala. Open Monday to Saturday 9 AM–10:30 PM and Sunday 9 AM–9 PM.">
+<title>Aiswarya Medicals | Athani, Kerala</title>
+<style>
+:root{
+  --green:#0b7a53; --green2:#075b3f; --mint:#e9f8f1; --dark:#12352a;
+  --text:#29433a; --white:#fff; --line:#dcebe5; --shadow:0 18px 45px rgba(10,70,48,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:#fbfefd;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--dark);font-size:1.08rem}
+.logo-mark{width:38px;height:38px;border-radius:12px;background:var(--green);color:white;display:grid;place-items:center;font-size:22px;font-weight:900}
+nav{display:flex;gap:26px;font-weight:600;font-size:.95rem}
+nav a:hover{color:var(--green)}
+.nav-btn{padding:10px 16px;background:var(--green);color:white;border-radius:10px}
+.hero{padding:78px 0 70px;background:linear-gradient(135deg,#f2fbf7 0%,#fff 62%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;background:var(--mint);color:var(--green2);padding:8px 13px;border-radius:999px;font-size:.88rem;font-weight:700;margin-bottom:18px}
+h1{font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.04;letter-spacing:-.045em;color:var(--dark);margin-bottom:20px}
+.hero p{font-size:1.1rem;max-width:620px;color:#526d63;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 19px;border-radius:12px;font-weight:750;border:1px solid var(--green)}
+.btn-primary{background:var(--green);color:white}
+.btn-secondary{background:white;color:var(--green)}
+.hero-card{background:white;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:var(--shadow)}
+.cross{width:72px;height:72px;border-radius:20px;background:var(--mint);color:var(--green);display:grid;place-items:center;font-size:42px;font-weight:300;margin-bottom:22px}
+.hero-card h3{font-size:1.35rem;color:var(--dark);margin-bottom:14px}
+.info-row{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.info-row:last-child{border-bottom:0}
+.icon{width:30px;flex:none}
+.rating{font-weight:800;color:#a26a00}
+section{padding:76px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 40px}
+.section-head h2{font-size:2.2rem;color:var(--dark);letter-spacing:-.03em}
+.section-head p{color:#647c73;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid var(--line);padding:28px;border-radius:18px;box-shadow:0 8px 30px rgba(10,70,48,.05)}
+.card-icon{font-size:30px;margin-bottom:13px}
+.card h3{color:var(--dark);margin-bottom:7px}
+.hours{background:var(--dark);color:white}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.hours h2{font-size:2.4rem;line-height:1.15}
+.hours p{color:#c9ded6;margin-top:12px}
+.hours-table{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;overflow:hidden}
+.hour-row{display:flex;justify-content:space-between;padding:15px 20px;border-bottom:1px solid rgba(255,255,255,.1)}
+.hour-row:last-child{border:0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.contact-card{background:var(--mint);padding:30px;border-radius:20px}
+.contact-card h3{color:var(--dark);font-size:1.35rem;margin-bottom:10px}
+.map{min-height:300px;border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+.map iframe{width:100%;height:100%;min-height:300px;border:0}
+footer{background:#062f22;color:#d8ebe4;padding:30px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.small{font-size:.9rem;color:#91b3a7}
+@media(max-width:800px){
+  nav{display:none}
+  .hero{padding-top:50px}
+  .hero-grid,.hours-grid,.contact-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  section{padding:58px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#top"><span class="logo-mark">+</span>Aiswarya Medicals</a>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#hours">Hours</a>
+      <a href="#location">Location</a>
+      <a class="nav-btn" href="tel:+919447414744">Call Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">● Your local pharmacy in Athani</span>
+      <h1>Healthcare you can count on.</h1>
+      <p>Aiswarya Medicals is your neighbourhood medical store in Athani, Kerala, offering convenient access to medicines and everyday healthcare essentials.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="tel:+919447414744">📞 Call the Pharmacy</a>
+        <a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Aiswarya+Medicals+Athani+Kerala" target="_blank">📍 Get Directions</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="cross">+</div>
+      <h3>Aiswarya Medicals</h3>
+      <div class="info-row"><span class="icon">⭐</span><span><b class="rating">4.3 / 5</b><br><small>Based on 6 reviews</small></span></div>
+      <div class="info-row"><span class="icon">📍</span><span>5933+WQV, Kariyad, Athani,<br>Kerala 683585, India</span></div>
+      <div class="info-row"><span class="icon">🕘</span><span><b>Open daily</b><br>Mon–Sat until 10:30 PM · Sun until 9 PM</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <h2>Here when you need us</h2>
+      <p>A simple, convenient pharmacy experience for the local community.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="card-icon">💊</div><h3>Medicines</h3><p>Find the medicines and pharmacy essentials you need. Please bring a valid prescription where required.</p></div>
+      <div class="card"><div class="card-icon">🩺</div><h3>Healthcare Essentials</h3><p>Everyday health and wellness products for you and your family.</p></div>
+      <div class="card"><div class="card-icon">🤝</div><h3>Local & Convenient</h3><p>A neighbourhood medical store serving customers in Athani and surrounding areas.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="hours" id="hours">
+  <div class="container hours-grid">
+    <div>
+      <h2>Opening hours</h2>
+      <p>Plan your visit around our regular store timings.</p>
+    </div>
+    <div class="hours-table">
+      <div class="hour-row"><span>Monday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Tuesday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Wednesday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Thursday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Friday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Saturday</span><b>9:00 AM – 10:30 PM</b></div>
+      <div class="hour-row"><span>Sunday</span><b>9:00 AM – 9:00 PM</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="location">
+  <div class="container">
+    <div class="section-head">
+      <h2>Visit Aiswarya Medicals</h2>
+      <p>Easy to find in Kariyad, Athani, Kerala.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>Store details</h3>
+        <p><b>Address</b><br>5933+WQV, Kariyad, Athani, Kerala 683585, India</p>
+        <br>
+        <p><b>Phone</b><br><a href="tel:+919447414744">+91 94474 14744</a></p>
+        <br>
+        <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=Aiswarya+Medicals+5933%2BWQV+Kariyad+Athani+Kerala+683585" target="_blank">Open in Google Maps →</a>
+      </div>
+      <div class="map">
+        <iframe loading="lazy" src="https://www.google.com/maps?q=Aiswarya%20Medicals%2C%20Kariyad%2C%20Athani%2C%20Kerala%20683585&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><b>Aiswarya Medicals</b><br><span class="small">Athani, Kerala · Your local medical store</span></div>
+    <div class="small">© 2026 Aiswarya Medicals. All rights reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
